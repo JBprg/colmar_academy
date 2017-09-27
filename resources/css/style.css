@@ -1,0 +1,398 @@
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+
+/* general page formating */
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {                                                 /* base container*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text_container {                                   /* general text container */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.image_container {                                        /* image containers */
+  display: block;
+}
+
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {                          /* to create visual seperation during build out */
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  border: 1px dotted red;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Libre Franklin";
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: grey;
+  line-height: 1.2;
+  padding: 0.5rem 0;
+}
+
+
+/* Header */
+header {
+  width: 100%;
+  height: 4rem;
+  font-family: "Open Sans"
+  padding: 0 1.5rem;
+  background-color: white;
+  z-index: 1;
+  margin-top: 0;
+  position: fixed;
+}
+
+header .logo {
+  height: 2rem;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+header .logo span {
+  align-self: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul li {
+  padding: 0 0.5rem;
+}
+
+/* Main page content */
+
+.page_contents {
+  padding-top: 4rem;
+}
+
+  /* Top banner */
+.banner_container {
+  background-color: #d3d3d3;             /* color for visual - refine later */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  border: 2px solid blue;
+}
+
+.banner_container .image_container {              /* sets image to 60% of screen */
+  max-width: 60%;
+  padding-right: 1.5rem;
+}
+
+.banner_container .image_container img {
+ max-width: 100%;
+ height: auto;
+ display: block;
+}
+
+.banner_container .text_container {
+  width: 40%;
+  padding-right: 4rem;
+}
+
+.banner_container .text_container h1 {
+  color: #000098;
+}
+
+.banner_container .text_container h3 {
+  font-weight: normal;
+  padding: 1.5rem 0;
+}
+
+.banner_container .text_container button {
+  align-self: center;
+  width: 100%;
+  font-size: 0.75rem;
+  color: #ffffff;
+  background-color: #0000E5;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.banner_container .text_container button a {
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.banner_container .text_container button:hover{
+  font-weight: 600;
+  background-color: #64ACF2;
+  transition: #000000 1.5s linear 1s;
+}
+
+
+
+  /* Info section */
+.information {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  border: 2px solid blue;
+}
+
+
+/* Focus item for infor section */
+.information .focus_container {                /* sets image to 60% of screen */
+  max-width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  border: 2px solid red;
+}
+
+.information .focus_container .image_container {
+  max-width: 100%;
+}
+
+.information .focus_container .image_container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.information .focus_container .text_container {
+  height: auto;
+  display: block;
+}
+
+.information .focus_container .text_container h2 {
+  text-align: left;
+  padding-top: 2rem;
+}
+
+.information .focus_container .text_container p {
+  font-style: italic;
+  padding: 1.5rem 0;
+}
+
+.information .focus_container .text_container h4 {
+  font-size: 0.8rem;
+  padding: 1.5rem 0;
+}
+
+/* Additional info items for infor section */
+.information .info {
+  max-width: 40%;
+  display: block;
+  padding: 1rem 0;
+  border: 2px solid red;
+}
+
+.information .more_info {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem 0;
+  border: 2px solid green;
+}
+
+.information .more_info .image_container {
+  max-width: 35%;
+  height: auto;
+  padding: 0 1rem;
+}
+
+.information .more_info .image_container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.information .more_info .text_container {
+  max-width: 65%;
+  height: auto;
+  margin-right: 1.5rem;
+
+}
+
+.information .more_info .text_container a {
+  font-size: 0.8rem;
+  color: #1e90ff;
+  border: none;
+  background-color: inherit;
+}
+
+.information .more_info .text_container a:hover {
+  color: #b22222;
+}
+
+
+  /* Programs section */
+.learning {
+  background-color: #d3d3d3;               /* color for visual - refine later */
+  padding: 2rem 3.5rem;
+  border: 2px solid blue;
+}
+
+.learning h2 {
+  padding-bottom: 1rem;
+}
+
+.programs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 2px solid red;
+}
+
+.program {
+  background-color: white;                 /* color for visual - refine later */
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  border: 2px solid green;
+
+}
+
+.program .image_container img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.program .text_container h3 {
+  padding-bottom: 1rem;
+}
+
+.program .text_container {
+  padding: 1rem;
+}
+
+.program .text_container span {
+  padding: 0.5rem 0;
+}
+
+
+
+  /* Thesis Section */
+.exhibits {
+    border: 2px solid blue;
+}
+
+.exhibits h2 {
+  padding-top: 2rem;
+}
+
+.exhibits_content {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  padding: 2rem 0.5rem 2rem 1.5rem;
+  border: 2px solid red;
+}
+
+.thesis_focus {
+  max-width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1.5rem;
+  border: 1px dotted purple;
+}
+
+.thesis {
+  max-width: 40%;
+  height: auto;
+  border: 3px dotted purple;
+}
+
+.more_thesis {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem 0;
+  border: 2px solid green;
+}
+
+.more_thesis .image_container {
+  max-width: 35%;
+  height: auto;
+  padding: 0 1rem;
+}
+
+.more_thesis .image_container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.more_thesis .text_container {
+  max-width: 65%;
+  height: auto;
+  margin-right: 1.5rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+  font-family: "Open Sans";
+  padding: 1rem 1.5rem;
+}
+
+footer .copyright {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+footer .legal ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .legal ul li {
+  padding: 0 0.5rem;
+}
