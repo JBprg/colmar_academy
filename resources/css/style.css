@@ -33,7 +33,7 @@ h1 {
   font-weight: bold;
 }
 
-h2 {                          /* to create visual seperation during build out */
+h2 {              /* Borders are to create visual seperation during build out */
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
@@ -98,7 +98,7 @@ header nav ul li {
 
   /* Top banner */
 .banner_container {
-  background-color: #d3d3d3;             /* color for visual - refine later */
+  background-color: #d3d3d3;               /* color for visual - refine later */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,7 +106,7 @@ header nav ul li {
   border: 2px solid blue;
 }
 
-.banner_container .image_container {              /* sets image to 60% of screen */
+.banner_container .image_container {           /* sets image to 60% of screen */
   max-width: 60%;
   padding-right: 1.5rem;
 }
@@ -134,25 +134,28 @@ header nav ul li {
 .banner_container .text_container button {
   align-self: center;
   width: 100%;
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: #ffffff;
   background-color: #0000E5;
   border-radius: 0.5rem;
   padding: 0.5rem 0;
+  transition: background-color 0.5s linear;
 }
 
 .banner_container .text_container button a {
   color: #ffffff;
-  font-size: 1rem;
+  transition: color 0.5s linear;
+  padding: 0.5rem 9rem;
 }
 
 .banner_container .text_container button:hover{
   font-weight: 600;
   background-color: #64ACF2;
-  transition: #000000 1.5s linear 1s;
 }
 
-
+.banner_container .text_container button a:hover{
+  color: #000000;
+}
 
   /* Info section */
 .information {
