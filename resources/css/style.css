@@ -1,5 +1,5 @@
 html {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 16px;
 }
 
@@ -35,6 +35,7 @@ h1 {
 
 h2 {              /* Borders are to create visual seperation during build out */
   font-size: 2rem;
+  letter-spacing: 0.5px;
   font-weight: bold;
   text-align: center;
   border: 1px dotted red;
@@ -42,6 +43,7 @@ h2 {              /* Borders are to create visual seperation during build out */
 
 h3 {
   font-size: 1.4rem;
+  letter-spacing: 0.5px;
   font-weight: bold;
 }
 
@@ -50,6 +52,7 @@ p {
   font-size: 0.9rem;
   font-weight: normal;
   color: grey;
+  letter-spacing: 0.5px;
   line-height: 1.2;
   padding: 0.5rem 0;
 }
@@ -59,8 +62,7 @@ p {
 header {
   width: 100%;
   height: 4rem;
-  font-family: "Open Sans"
-  padding: 0 1.5rem;
+  font-family: "Open Sans";
   background-color: white;
   z-index: 1;
   margin-top: 0;
@@ -73,10 +75,19 @@ header .logo {
   display: flex;
   justify-content: center;
   align-content: center;
+  padding-left: 1.5rem;
 }
 
 header .logo span {
+  font-weight: bold;
   align-self: center;
+}
+
+header .logo p {
+  font-family: "Open Sans";
+  font-size: 1rem;
+  align-self: center;
+
 }
 
 header nav ul {
@@ -84,10 +95,30 @@ header nav ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-right: 1.5rem;
 }
 
 header nav ul li {
   padding: 0 0.5rem;
+}
+
+header .mobile_header {
+  display: none;
+}
+
+/* Header for mobile view screens */
+@media only screen and (max-width: 768px){
+  header .logo,
+  header nav {
+    display: none;
+  }
+
+  header .mobile_header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 /* Main page content */
@@ -96,8 +127,8 @@ header nav ul li {
   padding-top: 4rem;
 }
 
-  /* Top banner */
-.banner_container {
+  /* Top section */
+.top_container {
   background-color: #d3d3d3;               /* color for visual - refine later */
   display: flex;
   justify-content: center;
@@ -106,32 +137,32 @@ header nav ul li {
   border: 2px solid blue;
 }
 
-.banner_container .image_container {           /* sets image to 60% of screen */
+.top_container .image_container {           /* sets image to 60% of screen */
   max-width: 60%;
   padding-right: 1.5rem;
 }
 
-.banner_container .image_container img {
+.top_container .image_container img {
  max-width: 100%;
  height: auto;
  display: block;
 }
 
-.banner_container .text_container {
+.top_container .text_container {
   width: 40%;
   padding-right: 4rem;
 }
 
-.banner_container .text_container h1 {
+.top_container .text_container h1 {
   color: #000098;
 }
 
-.banner_container .text_container h3 {
+.top_container .text_container h3 {
   font-weight: normal;
   padding: 1.5rem 0;
 }
 
-.banner_container .text_container button {
+.top_container .text_container button {
   align-self: center;
   width: 100%;
   font-size: 1rem;
@@ -142,20 +173,44 @@ header nav ul li {
   transition: background-color 0.5s linear;
 }
 
-.banner_container .text_container button a {
+.top_container .text_container button a {
   color: #ffffff;
-  transition: color 0.5s linear;
-  padding: 0.5rem 9rem;
 }
 
-.banner_container .text_container button:hover{
+.top_container .text_container button:hover{
   font-weight: 600;
   background-color: #64ACF2;
 }
 
-.banner_container .text_container button a:hover{
-  color: #000000;
+
+/* Top container for mobile view screens */
+@media only screen and (max-width: 768px){
+  .top_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .top_container .image_container {
+    display: flex;
+    min-width: 100%;
+    padding: 0;
+  }
+
+  .top_container .image_container img {
+    display: block;
+    width: 100%;
+  }
+
+  .top_container .text_container {
+    width: auto;
+    padding: 2rem 1rem;
+    border: 1px solid green;
+  }
+
 }
+
 
   /* Info section */
 .information {
@@ -199,6 +254,7 @@ header nav ul li {
 
 .information .focus_container .text_container p {
   font-style: italic;
+  letter-spacing: 1px;
   padding: 1.5rem 0;
 }
 
@@ -206,6 +262,10 @@ header nav ul li {
   font-size: 0.8rem;
   padding: 1.5rem 0;
 }
+
+
+
+
 
 /* Additional info items for infor section */
 .information .info {
@@ -228,6 +288,10 @@ header nav ul li {
   padding: 0 1rem;
 }
 
+.information .more_info .image_container_small {
+  display: none;
+}
+
 .information .more_info .image_container img {
   max-width: 100%;
   height: auto;
@@ -243,14 +307,51 @@ header nav ul li {
 
 .information .more_info .text_container a {
   font-size: 0.8rem;
+  font-weight: normal;
   color: #1e90ff;
   border: none;
   background-color: inherit;
 }
 
 .information .more_info .text_container a:hover {
+  color: #0000E5;
+  font-weight: bolder;
+}
+
+.information .more_info .text_container a:visited {
   color: #b22222;
 }
+
+/* Info container for mobile view screens */
+@media only screen and (max-width: 768px){
+  .information .focus_container {
+    display: none;
+  }
+
+  .information .info {
+    min-width: 100%;
+  }
+
+  .information .more_info {
+    flex-direction: column;
+    width: 100%;
+  }
+  .information .more_info .image_container {
+    display: none;
+  }
+  
+  .information .more_info .image_container_small {
+    display: block;
+    width: 100%;
+  }
+
+  .information .more_info .image_container_small img {
+    display: block;
+    width: 100%;
+  }
+}
+
+
 
 
   /* Programs section */
@@ -328,6 +429,21 @@ header nav ul li {
   align-items: center;
   padding-right: 1.5rem;
   border: 1px dotted purple;
+}
+
+.thesis_focus .image_container {
+  width: 100%;
+  height: auto;
+}
+
+.thesis_focus .image_container video {
+ max-width: 100%;
+ height: auto;
+ display: block;
+}
+
+.thesis_focus .text_container {
+  padding-top: 1.5rem;
 }
 
 .thesis {

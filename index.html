@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600" rel="stylesheet">
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+
     <title>Colmar Academy</title>
   </head>
 
@@ -21,7 +22,8 @@
   <!-- Logo (flex container) -->
       <div class="logo">
         <img src="./resources/images/ic-logo.svg" alt="Colmar Academy regal lion logo">
-        <span><strong>COLMAR</strong>ACADEMY</span>
+        <span>COLMAR</span>
+        <p>ACADEMY</p>
       </div>
 
   <!-- Navigation (flex container) -->
@@ -35,6 +37,14 @@
         </ul>
       </nav>
 
+      <!-- Mobile container (flex container) -->
+      <div class="mobile_header">
+        <img src="./resources/images/ic-logo.svg" alt="Colmar Academy regal lion logo">
+        <a href="#campus"><img src="./resources/images/ic-on-campus.svg" alt="Desk icon"></a>
+        <a href="#online"><img src="./resources/images/ic-online.svg" alt="Computer screen icon"></a>
+        <a href="#signin"><img src="./resources/images/ic-login.svg" alt="Login icon"></a>
+
+      </div>
 
 
     </header>
@@ -50,7 +60,7 @@
 
 
 <!-- Section 2 - Banner (flex container) -->
-      <div class="banner_container">
+      <div class="top_container">
 
     <!-- Image Conatiner (block container) -->
         <div class="image_container">
@@ -106,6 +116,11 @@
               <img src="./resources/images/information-orientation.jpg" alt="A
               group of people walking along a brick path">
             </div>
+        <!-- Image for mobile view screen -->
+            <div class="image_container_small">
+              <img src="./resources/images/information-orientation-mobile.jpg" alt="A
+              group of people walking along a brick path">
+            </div>
             <!-- Text (flex container)-->
             <div class="text_container">
                 <!-- Title -->
@@ -122,6 +137,11 @@
             <!-- Image (block container) -->
             <div class="image_container">
               <img src="./resources/images/information-campus.jpg" alt="A classroom
+              with a large map on the wall">
+            </div>
+        <!-- Image for mobile view screen -->
+            <div class="image_container_small">
+              <img src="./resources/images/information-campus-mobile.jpg" alt="A classroom
               with a large map on the wall">
             </div>
             <!-- Text (flex container)-->
@@ -142,6 +162,12 @@
                 <img src="./resources/images/information-guest-lecture.jpg"
                 alt="Headshot of Oliver Sack">
               </div>
+        <!-- Image for mobile view screen -->
+              <div class="image_container_small">
+                <img src="./resources/images/information-guest-lecture-mobile.jpg"
+                alt="Headshot of Oliver Sack">
+              </div>
+
               <!-- Text (flex container)-->
               <div class="text_container">
                   <!-- Title -->
@@ -294,9 +320,12 @@
 
         <!-- Video (block ??? container) -->
             <div class="image_container">
-              <video src="./resources/video/thesis.mp4" autoplay poster="posterimage.jpg" controls>
-                <p>This video is not supprted by your browser</p>
+
+              <video width="100%" height="auto" controls>
+                <source src=./resources/videos/thesis.mp4 type="video/mp4">
+                  Your browser does not support the video tag.
               </video>
+
             </div>
 
         <!-- Text (flex conatiner) -->
