@@ -58,6 +58,22 @@ p {
 }
 
 
+
+@media only screen and (max-width: 481px) {
+/*  .container {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }  */
+  .text_container {
+    border: 1px dotted black;
+  }
+
+}
+
+
+
+
 /* Header */
 header {
   width: 100%;
@@ -187,9 +203,25 @@ header .mobile_header {
   background-color: #64ACF2;
 }
 
+/* Info container for tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .top_container {
 
-/* Top container for mobile view screens */
-@media only screen and (max-width: 768px){
+  }
+ .top_container .image_container {
+
+ }
+  .top_container .image_container img {
+
+  }
+   .top_container .text_container  {
+
+   }
+}
+
+
+/* Top container for mobile */
+@media only screen and (max-width: 481px){
   .top_container {
     display: flex;
     flex-direction: column;
@@ -198,8 +230,8 @@ header .mobile_header {
   }
 
   .top_container .image_container {
-    display: flex;
     min-width: 100%;
+    height: auto;
     padding: 0;
   }
 
@@ -293,7 +325,7 @@ header .mobile_header {
   padding: 0 1rem;
 }
 
-.information .more_info .image_container_small {
+.information .more_info .image_container_mobile {
   display: none;
 }
 
@@ -327,37 +359,48 @@ header .mobile_header {
   color: #b22222;
 }
 
-/* Info container for mobile view screens */
-@media only screen and (max-width: 768px){
+/* Info container for tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .information .focus_container {
+    display: none;
+  }
+  .information .info {
+    min-width: 100%;
+  }
+
+}
+
+/* Info container for mobile */
+@media only screen and (max-width: 481px){
   .information .focus_container {
     display: none;
   }
 
   .information .info {
     min-width: 100%;
+
   }
 
   .information .more_info {
+    display: block;
     flex-direction: column;
-    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
   }
+
   .information .more_info .image_container {
     display: none;
   }
 
-  .information .more_info .image_container_small {
+  .information .more_info .image_container_mobile {
     display: block;
     width: 100%;
   }
 
-  .information .more_info .image_container_small img {
-    display: block;
+  .information .more_info .image_container_mobile img {
     width: 100%;
   }
 }
-
-
-
 
   /* Programs section */
 .learning {
@@ -406,7 +449,47 @@ header .mobile_header {
   padding: 0.5rem 0;
 }
 
+.program_list{
+  display: none;
+}
 
+/* Learning container for tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+}
+
+/* Learning container for mobile */
+@media only screen and (max-width: 481px){
+  .learning {
+    background-color: #ffffff;
+    padding: 2rem 1rem;
+    border: 2px solid blue;
+  }
+
+  .learning h2 {
+    padding-bottom: 1rem;
+  }
+
+  .programs {
+    display: none;
+  }
+
+  .program_list {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .program_list h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #d3d3d3;
+    padding: 1rem 1rem 1rem 1.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid green;
+  }
+
+}
 
   /* Thesis Section */
 .exhibits {
@@ -483,18 +566,29 @@ header .mobile_header {
 
 }
 
+/* Thesis container for tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px){
 
+}
 
+/* Thesis container for mobile */
+@media only screen and (max-width: 481px){
+  .exhibits_content{
+    padding: 1rem 0 1.5rem 0;
+  }
+  .thesis_focus{
+    max-width: 100%;
+    padding: 0;
+  }
+  .thesis_focus .text_container {
+    display: none;
+  }
 
+  .thesis {
+    display: none;
+  }
 
-
-
-
-
-
-
-
-
+}
 
 /* Footer */
 footer {
@@ -519,4 +613,20 @@ footer .legal ul {
 
 footer .legal ul li {
   padding: 0 0.5rem;
+}
+
+/* Footer container for tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+}
+
+/* Footer container for mobile */
+@media only screen and (max-width: 481px){
+  .copyright span {
+    font-size: 0.75rem;
+    padding: 1rem 0;
+  }
+  .legal {
+    display: none;
+  }
 }
