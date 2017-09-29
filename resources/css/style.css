@@ -162,6 +162,11 @@ header .mobile_header {
   padding: 1.5rem 0;
 }
 
+.top_container .text_container .button_container {
+  display: block;
+  width: 100%;
+}
+
 .top_container .text_container button {
   align-self: center;
   width: 100%;
@@ -339,7 +344,7 @@ header .mobile_header {
   .information .more_info .image_container {
     display: none;
   }
-  
+
   .information .more_info .image_container_small {
     display: block;
     width: 100%;
