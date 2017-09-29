@@ -6,7 +6,6 @@ html {
 
 /* general page formating */
 body {
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -16,7 +15,7 @@ body {
   align-items: center;
 }
 
-.text_container {                                   /* general text container */
+.text_container {                                /* general text container */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -66,6 +65,7 @@ p {
     display: block;
   }  */
   .text_container {
+    min-width: 100%;
     border: 1px dotted black;
   }
 
@@ -140,6 +140,9 @@ header .mobile_header {
 /* Main page content */
 
 .page_contents {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
   padding-top: 4rem;
 }
 
@@ -164,26 +167,30 @@ header .mobile_header {
  display: block;
 }
 
-.top_container .text_container {
+.top_container .top_text {
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
   padding-right: 4rem;
 }
 
-.top_container .text_container h1 {
+.top_container .top_text h1 {
   color: #000098;
 }
 
-.top_container .text_container h3 {
+.top_container .top_text h3 {
   font-weight: normal;
   padding: 1.5rem 0;
 }
 
-.top_container .text_container .button_container {
-  display: block;
+.top_container .top_text .button_container {
   width: 100%;
+  display: block;
 }
 
-.top_container .text_container button {
+.top_container .top_text button {
   align-self: center;
   width: 100%;
   font-size: 1rem;
@@ -194,11 +201,11 @@ header .mobile_header {
   transition: background-color 0.5s linear;
 }
 
-.top_container .text_container button a {
+.top_container .top_text button a {
   color: #ffffff;
 }
 
-.top_container .text_container button:hover{
+.top_container .top_text button:hover{
   font-weight: 600;
   background-color: #64ACF2;
 }
@@ -214,7 +221,7 @@ header .mobile_header {
   .top_container .image_container img {
 
   }
-   .top_container .text_container  {
+   .top_container .top_text  {
 
    }
 }
@@ -223,6 +230,7 @@ header .mobile_header {
 /* Top container for mobile */
 @media only screen and (max-width: 481px){
   .top_container {
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -240,10 +248,21 @@ header .mobile_header {
     width: 100%;
   }
 
-  .top_container .text_container {
-    width: auto;
+  .top_container .top_text {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
     padding: 2rem 1rem;
     border: 1px solid green;
+  }
+
+  .top_container .top_text h1 {
+    font-size: 1.5rem;
+  }
+
+  .top_container .top_text h3 {
+    font-size: 1rem;
   }
 
 }
