@@ -56,24 +56,6 @@ p {
   padding: 0.5rem 0;
 }
 
-
-
-@media only screen and (max-width: 481px) {
-/*  .container {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }  */
-  .text_container {
-    min-width: 100%;
-    border: 1px dotted black;
-  }
-
-}
-
-
-
-
 /* Header */
 header {
   width: 100%;
@@ -122,6 +104,12 @@ header .mobile_header {
   display: none;
 }
 
+/* Header for tablet view screens
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+} */
+
+
 /* Header for mobile view screens */
 @media only screen and (max-width: 768px){
   header .logo,
@@ -140,9 +128,9 @@ header .mobile_header {
 /* Main page content */
 
 .page_contents {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
+  /* display: flex;
+     flex-direction: column;
+  max-width: 100%;  */
   padding-top: 4rem;
 }
 
@@ -169,10 +157,12 @@ header .mobile_header {
 
 .top_container .top_text {
   width: 40%;
+  /* added below with new div name */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   flex-wrap: wrap;
+    /* added above with new div name */
   padding-right: 4rem;
 }
 
@@ -200,17 +190,18 @@ header .mobile_header {
   padding: 0.5rem 0;
   transition: background-color 0.5s linear;
 }
-
-.top_container .top_text button a {
-  color: #ffffff;
-}
-
 .top_container .top_text button:hover{
   font-weight: 600;
   background-color: #64ACF2;
 }
 
-/* Info container for tablet */
+.top_container .top_text button a {
+  color: #ffffff;
+}
+
+
+
+/* Info container for tablet
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .top_container {
 
@@ -224,11 +215,11 @@ header .mobile_header {
    .top_container .top_text  {
 
    }
-}
+} */
 
 
 /* Top container for mobile */
-@media only screen and (max-width: 481px){
+@media only screen and (max-width: 480px){
   .top_container {
     max-width: 100%;
     display: flex;
@@ -264,9 +255,7 @@ header .mobile_header {
   .top_container .top_text h3 {
     font-size: 1rem;
   }
-
 }
-
 
   /* Info section */
 .information {
@@ -318,10 +307,6 @@ header .mobile_header {
   font-size: 0.8rem;
   padding: 1.5rem 0;
 }
-
-
-
-
 
 /* Additional info items for infor section */
 .information .info {
@@ -378,18 +363,16 @@ header .mobile_header {
   color: #b22222;
 }
 
-/* Info container for tablet */
+/* Info more_info container for tablet
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  .information .focus_container {
-    display: none;
-  }
+
   .information .info {
     min-width: 100%;
   }
 
-}
+} */
 
-/* Info container for mobile */
+/* Info more_info container for mobile   */
 @media only screen and (max-width: 481px){
   .information .focus_container {
     display: none;
@@ -397,7 +380,6 @@ header .mobile_header {
 
   .information .info {
     min-width: 100%;
-
   }
 
   .information .more_info {
@@ -472,13 +454,13 @@ header .mobile_header {
   display: none;
 }
 
-/* Learning container for tablet */
+/* Learning container for tablet
 @media only screen and (min-width: 481px) and (max-width: 768px){
 
-}
+} */
 
-/* Learning container for mobile */
-@media only screen and (max-width: 481px){
+/* Learning container for mobile  */
+@media only screen and (max-width: 480px){
   .learning {
     background-color: #ffffff;
     padding: 2rem 1rem;
@@ -500,14 +482,25 @@ header .mobile_header {
   }
 
   .program_list h3 {
+    color: inherit;
     font-size: 1rem;
     font-weight: 500;
     background-color: #d3d3d3;
     padding: 1rem 1rem 1rem 1.5rem;
     margin-bottom: 0.5rem;
-    border: 1px solid green;
+    border: 2px solid #ffffff;
+    transition: font-size 500ms linear,
+      font-weight 500ms linear,
+      color 500ms linear,
+      border-color 500ms linear;
   }
 
+  .program_list h3:hover{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0000E5;
+    border-color: #0000E5;
+  }
 }
 
   /* Thesis Section */
@@ -585,12 +578,12 @@ header .mobile_header {
 
 }
 
-/* Thesis container for tablet */
+/* Thesis container for tablet
 @media only screen and (min-width: 481px) and (max-width: 768px){
 
-}
+}*/
 
-/* Thesis container for mobile */
+/* Thesis container for mobile  */
 @media only screen and (max-width: 481px){
   .exhibits_content{
     padding: 1rem 0 1.5rem 0;
@@ -634,13 +627,13 @@ footer .legal ul li {
   padding: 0 0.5rem;
 }
 
-/* Footer container for tablet */
+/* Footer container for tablet
 @media only screen and (min-width: 481px) and (max-width: 768px){
 
-}
+} */
 
 /* Footer container for mobile */
-@media only screen and (max-width: 481px){
+@media only screen and (max-width: 480px){
   .copyright span {
     font-size: 0.75rem;
     padding: 1rem 0;
