@@ -10,7 +10,7 @@ body {
   background-color: #FFF2E1;
 }
 
-.container {                                                 /* base container*/
+.container {                                         /* base container format */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,7 +23,7 @@ body {
   flex-wrap: wrap;
 }
 
-.image_container {                                        /* image containers */
+.image_container {                                /* general image containers */
   display: block;
 }
 
