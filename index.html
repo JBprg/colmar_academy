@@ -20,14 +20,14 @@
 
   <!-- Large view screen header (flex container) -->
     <!-- Logo (flex container) -->
-      <div class="logo">
+      <div class="logo" role="presentation">
         <img src="./resources/images/ic-logo.svg" alt="Colmar Academy regal lion logo">
         <span>COLMAR</span>
         <p>ACADEMY</p>
       </div>
     <!-- Navigation (flex container) -->
       <nav>
-        <ul>
+        <ul role="presentation">
           <li><a href="#campus">On Campus</a></li>
           <li><a href="#online">Online</a></li>
           <li><a href="#companies">For Companies</a></li>
@@ -36,7 +36,14 @@
       </nav>
 
   <!-- Mobile view screen header (flex container) -->
-      <div class="mobile_header">
+      <div class="tablet_nav" role="presentation">
+        <a href="#campus"><img src="./resources/images/ic-on-campus.svg" alt="Desk icon"></a>
+        <a href="#online"><img src="./resources/images/ic-online.svg" alt="Computer screen icon"></a>
+        <a href="#signin"><img src="./resources/images/ic-login.svg" alt="Login icon"></a>
+      </div>
+
+  <!-- Mobile view screen header (flex container) -->
+      <div class="mobile_header" role="presentation">
         <img src="./resources/images/ic-logo.svg" alt="Colmar Academy regal lion logo">
         <a href="#campus"><img src="./resources/images/ic-on-campus.svg" alt="Desk icon"></a>
         <a href="#online"><img src="./resources/images/ic-online.svg" alt="Computer screen icon"></a>
@@ -46,16 +53,16 @@
 
 
 <!-- Main page contents -->
-    <div class="page_contents">
+    <div class="page_contents" role="presentation">
 
 <!-- Top Section - (flex container) -->
       <div class="top_container">
     <!-- Image Conatiner (block container) -->
-        <div class="image_container">
+        <div class="image_container" role="presentation">
           <img src="./resources/images/banner.jpg" alt="Outdoor study group">
         </div>
     <!-- Text container (flex container) -->
-        <div class="top_text">
+        <div class="top_text" role="presentation">
           <h1>Learn something new everyday</h1>
           <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
         <!--  Start here button  (block container)-->
@@ -69,15 +76,14 @@
       <div class="information">
 
        <!-- Main Info (flex container) -->
-        <div class="focus_container">
-
+        <div class="focus_container" role="presentation">
          <!-- Image (block container) -->
-          <div class="image_container">
+          <div class="image_container" role="presentation">
             <img src="./resources/images/information-main.jpg" alt="Young man
             smiling while reading a book">
           </div>
          <!-- Text (flex container) -->
-          <div class="text_container">
+          <div class="text_container" aria-label="Artist">>
            <!-- Title -->
             <h2>It doesn't hurt to keep practicing</h2>
            <!-- Text -->
@@ -86,28 +92,26 @@
             sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat,
              tristique ligula".</p>
            <!-- Image Description -->
-            <h4>Emanuel, Sr. Strategist at Hiring.com</h4>
+            <h4 aria-label="pictured">Emanuel, Sr. Strategist at Hiring.com</h4>
           </div>
-
         </div>
 
       <!-- Addtional Information (flex container)  -->
-        <div class="info">
-
+        <div class="info" role="presentation">
          <!-- Info (flex conatiner) -->
           <div class="more_info container">
            <!-- Image (block container) -->
-            <div class="image_container">
-              <img src="./resources/images/information-orientation.jpg" alt="A
-              group of people walking along a brick path">
+            <div class="image_container" role="presentation">
+              <img src="./resources/images/information-orientation.jpg"
+              alt="people walking along a brick path">
             </div>
            <!-- Image for mobile view screen -->
-            <div class="image_container_mobile">
-              <img src="./resources/images/information-orientation-mobile.jpg" alt="A
-              group of people walking along a brick path">
+            <div class="image_container_mobile" role="presentation">
+              <img src="./resources/images/information-orientation-mobile.jpg"
+              alt="people walking along a brick path">
             </div>
            <!-- Text (flex container)-->
-            <div class="text_container">
+            <div class="text_container" role="presentation">
                <!-- Title -->
                 <h3>Orienation date</h3>
                <!-- Details -->
@@ -120,17 +124,17 @@
          <!-- Info (flex conatiner) -->
           <div class="more_info container">
            <!-- Image (block container) -->
-            <div class="image_container">
-              <img src="./resources/images/information-campus.jpg" alt="A classroom
-              with a large map on the wall">
+            <div class="image_container" role="presentation">
+              <img src="./resources/images/information-campus.jpg"
+              alt="A classroom with a large map on the wall">
             </div>
            <!-- Image for mobile view screen -->
-            <div class="image_container_mobile">
-              <img src="./resources/images/information-campus-mobile.jpg" alt="A classroom
-              with a large map on the wall">
+            <div class="image_container_mobile" role="presentation">
+              <img src="./resources/images/information-campus-mobile.jpg"
+              alt="A classroom with a large map on the wall">
             </div>
            <!-- Text (flex container)-->
-             <div class="text_container">
+             <div class="text_container" role="presentation">
                <!-- Title -->
                 <h3>Our campus</h3>
                <!-- Details -->
@@ -143,17 +147,17 @@
           <!-- Info (flex conatiner) -->
             <div class="more_info container">
              <!-- Image (block container) -->
-              <div class="image_container">
+              <div class="image_container" role="presentation">
                 <img src="./resources/images/information-guest-lecture.jpg"
                 alt="Headshot of Oliver Sack">
               </div>
              <!-- Image for mobile view screen -->
-              <div class="image_container_mobile">
+              <div class="image_container_mobile" role="presentation">
                 <img src="./resources/images/information-guest-lecture-mobile.jpg"
                 alt="Headshot of Oliver Sack">
               </div>
              <!-- Text (flex container)-->
-              <div class="text_container">
+              <div class="text_container" role="presentation">
                  <!-- Title -->
                   <h3>Our guest lecture</h3>
                  <!-- Details -->
@@ -170,19 +174,19 @@
     <!-- Section title (flex container) -->
         <h2>Start Learning</h2>
     <!-- Section content container (flex contatiner) -->
-          <div class="programs">
-
+          <div class="programs" role="presentation">
 
         <!-- Program (flex conatiner) -->
           <div class="program">
            <!-- Image (block container) -->
-            <div class="image_container">
-              <img src="./resources/images/course-software.jpg" alt="">
+            <div class="image_container" role="presentation">
+              <img src="./resources/images/course-software.jpg" alt="computer
+              screens on ditting on a desk">
             </div>
            <!-- Prgram Title (flex container)-->
-            <div class="text_container">
+            <div class="text_container" role="presentation">
              <!-- Course title  -->
-              <h3>Software engineering</h3>
+              <a href="#software_engineering"><h3>Software engineering</h3></a>
              <!-- "Courses"  -->
               <span>COURSES</span>
              <!-- Course list -->
@@ -193,13 +197,14 @@
         <!-- Program (flex conatiner) -->
           <div class="program">
            <!-- Image (block container) -->
-            <div class="image_container">
-              <img src="./resources/images/course-computer-art.jpg" alt="">
+            <div class="image_container" role="presentation">
+              <img src="./resources/images/course-computer-art.jpg" alt="hand
+              holding a cell phone">
             </div>
            <!-- Prgram Title (flex container)-->
-            <div class="text_container">
+            <div class="text_container" role="presentation">
              <!-- Course title  -->
-              <h3>Computer art</h3>
+              <a href="#computer_art"><h3>Computer art</h3></a>
              <!-- "Courses"  -->
               <span>COURSES</span>
              <!-- Course list -->
@@ -211,13 +216,14 @@
         <!-- Program (flex conatiner) -->
           <div class="program">
            <!-- Image (block container) -->
-            <div class="image_container">
-              <img src="./resources/images/course-design.jpg" alt="">
+            <div class="image_container" role="presentation">
+              <img src="./resources/images/course-design.jpg" alt="photographer
+              focusing a comera">
             </div>
            <!-- Prgram Title (flex container)-->
-            <div class="text_container">
+            <div class="text_container" role="presentation">
               <!-- Course title  -->
-               <h3>Design</h3>
+               <a href="#design"><h3>Design</h3></a>
               <!-- "Courses"  -->
                <span>COURSES</span>
               <!-- Course list -->
@@ -228,13 +234,14 @@
           <!-- Program (flex conatiner) -->
             <div class="program">
              <!-- Image (block container) -->
-              <div class="image_container">
-              <img src="./resources/images/course-data.jpg" alt="">
+              <div class="image_container" role="presentation">
+              <img src="./resources/images/course-data.jpg" alt="laptop comunter
+              displaying statistically based graphic">
               </div>
              <!-- Prgram Title (flex container)-->
-              <div class="text_container">
+              <div class="text_container" role="presentation">
                <!-- Course title  -->
-                <h3>Data</h3>
+                <a href="#data"><h3>Data</h3></a>
                <!-- "Courses"  -->
                 <span>COURSES</span>
                <!-- Course list -->
@@ -245,13 +252,13 @@
           <!-- Program (flex conatiner) -->
             <div class="program">
              <!-- Image (block container) -->
-              <div class="image_container">
-              <img src="./resources/images/course-business.jpg" alt="">
+              <div class="image_container" role="presentation">
+              <img src="./resources/images/course-business.jpg" alt="chess pieces">
               </div>
              <!-- Prgram Title (flex container)-->
-              <div class="text_container">
+              <div class="text_container" role="presentation">
                <!-- Course title  -->
-                <h3>Business</h3>
+                <a href="#business"><h3>Business</h3></a>
                <!-- "Courses"  -->
                 <span>COURSES</span>
                <!-- Course list -->
@@ -262,13 +269,14 @@
           <!-- Program (flex conatiner) -->
             <div class="program">
              <!-- Image (block container) -->
-              <div class="image_container">
-              <img src="./resources/images/course-marketing.jpg" alt="">
+              <div class="image_container" role="presentation">
+              <img src="./resources/images/course-marketing.jpg" alt="consumer
+              engaging with a smart watch">
               </div>
              <!-- Prgram Title (flex container)-->
-              <div class="text_container">
+              <div class="text_container" role="presentation">
                <!-- Course title  -->
-                <h3>Marketing</h3>
+                <a href="#marketing"><h3>Marketing</h3></a>
                <!-- "Courses"  -->
                 <span>COURSES</span>
                <!-- Course list -->
@@ -285,37 +293,25 @@
               <h3><a href="data">Data</a></h3>
               <h3><a href="business">Business</a></h3>
               <h3><a href="marketing">Marketing</a></h3>
-
-
         </div>
-
       </div>
 
-
-
-
 <!-- Section 5 - Exhibits (flex container)-->
-      <div class="exhibits">
+      <div class="exhibits" role="presentation">
     <!-- Section title -->
         <h2>Thesis Exhibits</h2>
     <!-- Section content container (flex contatiner) -->
-        <div class="exhibits_content">
-
-
+        <div class="exhibits_content" role="presentation">
 
       <!-- Thesis (flex conatiner) -->
           <div class="thesis_focus">
-
         <!-- Video (block ??? container) -->
             <div class="image_container">
-
               <video width="100%" height="auto" controls>
                 <source src=./resources/videos/thesis.mp4 type="video/mp4">
                   Your browser does not support the video tag.
               </video>
-
             </div>
-
         <!-- Text (flex conatiner) -->
             <div class="text_container">
             <!-- Title -->
@@ -326,75 +322,57 @@
               sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat,
                tristique ligula.</p>
             </div>
-
           </div>
 
-          <div class="thesis">
-
-
+          <div class="thesis" role="presentation">
       <!-- Thesis (flex conatiner) -->
             <div class="more_thesis container">
-
           <!-- Image (block container) -->
-              <div class="image_container">
-                <img src="./resources/images/thesis-fisma.jpg" alt="">
+              <div class="image_container" role="presentation">
+                <img src="./resources/images/thesis-fisma.jpg" alt="project mind map">
               </div>
-
           <!-- Text (flex container)-->
-              <div class="text_container">
+              <div class="text_container" role="presentation">
               <!-- Title -->
-                <h3>Fisma: Design and Protype</h3>
+                <a href="#fisma"><h3>Fisma: Design and Protype</h3></a>
               <!-- Description -->
                 <p>Designer showcase of new prototype product</p>
               </div>
-
             </div>
 
         <!-- Thesis (flex conatiner) -->
             <div class="more_thesis container">
-
           <!-- Image (block container) -->
-              <div class="image_container">
-                <img src="./resources/images/thesis-now-and-then.jpg" alt="">
+              <div class="image_container" role="presentation">
+                <img src="./resources/images/thesis-now-and-then.jpg"
+                alt="aerial view of New York CIty">
               </div>
-
           <!-- Text (flex container)-->
-              <div class="text_container">
+              <div class="text_container" role="presentation">
               <!-- Title -->
-                <h3>Now and then</h3>
+                <a href="#then_and_now"><h3>Now and then</h3></a>
               <!-- Description -->
                 <p>Reasearch study about New York</p>
               </div>
-
             </div>
           </div>
         </div>
-
       </div>
-
-
-
     </div>
 
-
 <!-- Section 6 - Footer (flex container) -->
-    <footer class=container>
-
+    <footer class=container role="presentation">
     <!-- Copyright (flex container) -->
       <div class="copyright">
         <span>&copy 2016 Colmar Academy. All rights reserved</span>
       </div>
-
     <!-- Legal (flex container) -->
       <div class="legal">
-        <ul>
-        <!-- Terms (link) -->
+        <ul role="presentation">
           <li><a href="#">Terms</a></li>
-        <!-- Privacy (link) -->
           <li><a href="#">Privacy</a></li>
         </ul>
       </div>
-
     </footer>
 
   </body>
