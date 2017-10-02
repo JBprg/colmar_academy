@@ -379,7 +379,6 @@ header .mobile_header {
     justify-content: center;
     align-items: center;
     padding: 2rem 1.5rem;
-    border: 2px solid red;
   }
   .information .more_info {
     line-height: 1.5;
